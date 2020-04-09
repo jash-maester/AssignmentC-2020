@@ -1,5 +1,5 @@
 /*
-Description:-   Shorten String
+Description:-   Function to Shorten String
 Written By:- Jash M.
 Created On:- 09/04/2020
 */
@@ -19,7 +19,8 @@ int main()
 
     //Getting the input
     printf("Enter The string: ");
-    scanf("%s", input);
+    // scanf("%s", input);
+    gets(input);
 
     printf("Enter the number of characters to shorten the string: ");
     scanf(" %d", &n);
@@ -32,12 +33,15 @@ int main()
 void shorten(char string[], int n)
 {
     char tempStr[n];
+    int i;
+
     if (!(n > strlen(string)))
     {
-        for (int i = 0; i < n; i++)
+        for (i = 0; i < n; i++)
         {
             tempStr[i] = string[i];
         }
+        tempStr[i] = '\0';
         printf("Shortened string: %s\n", tempStr);
     }
 }
