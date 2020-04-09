@@ -1,3 +1,9 @@
+/*
+Description:-   Shorten String
+Written By:- Jash M.
+Created On:- 09/04/2020
+*/
+
 #include <stdio.h>
 #include <string.h>
 
