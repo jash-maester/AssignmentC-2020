@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include <string.h>
+
+#define MAX_LENGTH 100
+
+void shorten(char string[], int n);
+
+int main()
+{
+    //Declaring String array and Number n
+    char input[MAX_LENGTH];
+    int n;
+
+    //Getting the input
+    printf("Enter The string: ");
+    scanf("%s", input);
+
+    printf("Enter the number of characters to shorten the string: ");
+    scanf(" %d", &n);
+
+    shorten(input, n);
+
+    return 0;
+}
+
+void shorten(char string[], int n)
+{
+    char tempStr[n];
+    if (!(n > strlen(string)))
+    {
+        for (int i = 0; i < n; i++)
+        {
+            tempStr[i] = string[i];
+        }
+        printf("Shortened string: %s\n", tempStr);
+    }
+}
