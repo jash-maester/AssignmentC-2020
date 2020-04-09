@@ -1,3 +1,9 @@
+/*
+Description:-   100 doors-100 students Problem.
+Written By:- Jash M.
+Created On:- 09/04/2020
+*/
+
 #include <stdio.h>
 
 #define STUDENTS 100
