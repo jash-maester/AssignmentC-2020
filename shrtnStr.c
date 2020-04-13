@@ -41,7 +41,6 @@ void shorten(char string[], int n)
         {
             tempStr[i] = string[i];
         }
-        tempStr[i] = '\0';
         printf("Shortened string: %s\n", tempStr);
     }
 }
