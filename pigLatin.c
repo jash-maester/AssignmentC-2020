@@ -114,9 +114,12 @@ void output(char string[], int flag)
     if (flag == 1)
     {
         int c = string[0];
-        int diff = c - 97;
-        c = 65 + diff;
-        string[0] = c;
+        if (!(c >= 65 && c <= 90))
+        {
+            int diff = c - 97;
+            c = 65 + diff;
+            string[0] = c;
+        }
     }
     printf("In Pig Latin: %s", string);
 }
